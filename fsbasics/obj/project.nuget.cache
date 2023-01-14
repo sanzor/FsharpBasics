@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "n/P/iTtayPWSeZmAYFxdeGfxpZFS2M0J+0ImfabYEJE/nqZ2oZS4/jwE92tzq+9FAntuRXT1/amkRQg7TQ+9vQ==",
+  "success": true,
+  "projectFilePath": "/home/sanzor/fsharpbasics/fsbasics/fsbasics.fsproj",
+  "expectedPackageFiles": [
+    "/home/sanzor/.nuget/packages/fsharp.core/7.0.0/fsharp.core.7.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
