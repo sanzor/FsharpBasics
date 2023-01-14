@@ -9,4 +9,8 @@ type WorkStatus= Active | Retired
 type IncomeType= Salary | Pension | Freelance
 type Income={incomeType:IncomeType;value:float}
 
-type HouseContributor={name:string;status:WorkStatus;gender:Gender;list:Income}
+type FamMember={name:string;status:WorkStatus;gender:Gender;income:Income list}
+type House={people:FamMember list}
+
+
+let famIncome member:FamMember=List.fold (fun acc elem ->  ) 0 member.income
