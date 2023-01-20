@@ -13,6 +13,8 @@ type FamMember={name:string;status:WorkStatus;gender:Gender;incomes:Income list}
 type House={people:FamMember list}
 
 
-let memberIncome (me:FamMember)=List.fold (fun (acc:float) (e:Income) -> acc+e.value  ) 0 me.incomes
 
-let houseIncome house:House= List.fold  (fun (acc:float) (fam:FamMember) ->acc+ memberIncome fam)   0 house.people
+let memberIncome (me:FamMember)= me.incomes |> List.fold (fun acc sz->  acc+sz.value ) 0.0
+
+
+let familyIncome h x= h.people |> List.map (memberIncome>>((+) 1.0)) |> (List.fold (+) x)
